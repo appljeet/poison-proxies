@@ -89,10 +89,80 @@ class landingPage extends StatelessWidget {
           Container(
             height: 450,
             color: Color(0XFF37243C),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(Icons.account_circle,size: 400,),
+
+                Container(
+                  padding: EdgeInsets.only(top: 20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+
+                      Container(
+                        height: 8,
+                        width: 100,
+                        color: Colors.white,
+                      ),
+
+
+                      Text('Residential',style: TextStyle(fontSize: 80,color: Colors.white,fontFamily: 'CircularStd-Book',fontWeight: FontWeight.w100 ),),
+
+                      Text('Proxy Server',style: TextStyle(fontSize: 80,color: Colors.white,fontFamily: 'CircularStd-Book',fontWeight: FontWeight.w900 ),),
+
+                      Container(
+                        padding: EdgeInsets.only(top: 20),
+                        child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore \nmagna aliqua. Ut enim ad minim veniam, quis nostrud \nexercitation ullamco boris.',style: TextStyle(fontSize: 20,color: Colors.white54,fontFamily: 'CircularStd-Book',fontWeight: FontWeight.w100 ),),
+                      ),
+
+
+                      Container(
+                        padding: EdgeInsets.only(top: 30),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            RaisedButton(
+                              onPressed: (){},
+                              child: Container(
+                                padding: EdgeInsets.only(right: 10,left: 10,top: 5,bottom: 5),
+                                child: Text('Get Started',style: TextStyle(fontSize: 20,fontFamily: 'CircularStd-Book',color: Colors.white70),),
+                              ),
+                              elevation: 30,
+                              color: Color(0XFF37243C),
+                            ),
+
+                            SizedBox(
+                              width: 40,
+                            ),
+
+
+                            FlatButton(
+                              color: Color(0XFF37243C),
+                              onPressed: (){},
+                              child: Row(
+                                children: [
+                                  Icon(Icons.play_arrow,color: Colors.purpleAccent,),
+                                  SizedBox(width: 10,),
+                                  Text('Learn More',style: TextStyle(fontSize: 20,fontFamily: 'CircularStd-Book',color: Colors.white70),),
+                                ],
+                              )
+                            )
+                          ],
+                        ),
+                      )
+
+
+
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
 
           Container(
-            height: 500,
+            height: 250,
             color: Colors.green,
           )
         ],
